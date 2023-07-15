@@ -1,12 +1,15 @@
 <template>
-    <div>
-      <nav class="navbar navbar-light">
-        <div class="container d-flex align-items-center justify-content-between">
+  <div>
+    <nav class="navbar navbar-light">
+      <div class="container d-flex flex-column align-items-center">
+        <div class="navbar-logo">
           <router-link to="/" class="navbar-brand">
-            <img src="../assets/logo1.png" alt="" width="100" >
+            <img src="../assets/logo1.png" alt="logo" width="100">
           </router-link>
-          
-          <ul class="navbar-nav flex-row">
+        </div>
+        
+        <div class="navbar-links">
+          <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item">
               <router-link to="/" class="nav-link">Home</router-link>
             </li>
@@ -14,39 +17,77 @@
               <router-link to="/html" class="nav-link">HTML</router-link>
             </li>
             <li class="nav-item">
-                <router-link to="/css" class="nav-link">CSS</router-link>
+              <router-link to="/css" class="nav-link">CSS</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/js" class="nav-link">JS</router-link>
             </li>
           </ul>
         </div>
-      </nav>
-    </div>
-  </template>
-  
-  
-  
+      </div>
+    </nav>
+  </div>
+</template>
 
-
-<script setup>
-
+<script setup>  
 
 </script>
 
 <style scoped>
-  .navbar-nav.flex-row .nav-item:not(:last-child) {
-    margin-right: 2cm;
-  }
-  .navbar-light{
+  .navbar-light {
     background-color: rgb(105, 110, 212);
   }
-  .nav-link{
+  .nav-link {
     color: #b0e0fa;
     font-size: x-large;
   }
-  .nav-link:hover{
-    
+  .nav-link:hover {
     color: rgb(207, 91, 49);
   }
-  </style>
+  .navbar-logo {
+    margin-bottom: 1rem;
+  }
+  .navbar-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-item {
+    margin-right: 8rem;
+    margin-left: 4rem;
+  }
+  
+  @media (max-width: 1200px) {
+    .nav-item {
+      margin-right: 6rem;
+      margin-left: 2rem;
+    }
+  }
+  @media (max-width: 767px) {
+   
+    .nav-item {
+      margin-right: 1.5rem;
+      margin-left: 1rem;
+    }
+    
+    .navbar-links .navbar-collapse {
+      flex-basis: 100%;
+      display: none;
+    }
+    .navbar-links .navbar-toggler {
+      display: flex;
+    }
+    .navbar-links .navbar-toggler[aria-expanded="true"] {
+      display: none;
+    }
+    .navbar-links .navbar-collapse.show {
+      display: flex !important;
+      flex-direction: column;
+    }
+    .navbar-links .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+</style>
