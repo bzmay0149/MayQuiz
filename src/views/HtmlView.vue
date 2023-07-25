@@ -21,6 +21,4 @@ import TitleComp from '@/components/TitleComp.vue';
 import CardComp from '@/components/CardComp.vue';
 
 const router = useRouter();
-</script>
-
-
+</script> 

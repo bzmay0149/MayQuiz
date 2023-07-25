@@ -96,5 +96,4 @@ const router = useRouter();
   }
 }
 </style>
-
   

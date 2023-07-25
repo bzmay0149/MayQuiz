@@ -1,6 +1,6 @@
 <template>
 <QuizComp />
-    
+
 </template>
    
    <script setup>
