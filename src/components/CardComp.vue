@@ -90,9 +90,16 @@ const router = useRouter();
   color: rgb(105, 110, 212);
 }
 
+@media (max-width: 1200px){
+  .card-img-top{
+    width: 15em;
+    height: 9em;
+  }
+}
+
 @media (max-width: 767.98px) {
   .card-img-top {
-    height: 8em;
+    height: 10em;
   }
 }
 </style>

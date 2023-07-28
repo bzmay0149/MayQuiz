@@ -40,4 +40,26 @@
    padding-bottom: 4rem;
    color:   #b0e0fa;
  }
+
+ @media (max-width: 1200px) {
+  .card{
+    margin-top: 6em;
+    margin-bottom: 4em;
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ }
+ @media (max-width: 767.98px){
+  h1{
+    font-size: 1.3em;
+  }
+  .card{
+    margin-top: 4em;
+    margin-bottom: 1em;
+  }
+  
+ }
  </style>

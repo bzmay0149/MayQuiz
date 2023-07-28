@@ -3,7 +3,7 @@
     <h1 class="card-header pt-4 border border-0 bg-transparent">
       ¡Bienvenido al juego Quiz de HTML, CSS y JavaScript!
     </h1>
-    <div class="margin">
+    <div class="conten">
       <div class="card-body pt-5">
         <h4 class="card-title">
           <span :class="{'hide': !isTextVisible}" id="hide-text">
@@ -45,7 +45,7 @@ function toggleText() {
   
 }
 
-.margin {
+.conten {
   margin: 0em 6em;
 }
 
@@ -72,6 +72,35 @@ function toggleText() {
   background-color: rgb(207, 91, 49);
   color:rgb(105, 110, 212);
 }
+
+@media (max-width: 1200px) {
+  .conten{
+    margin:0em 2em ;
+  }
+  .card{
+    margin-top: 4em;
+  }
+    
+}
+  
+@media (max-width: 767.98px){
+  h1{
+    font-size: x-large;
+    height: 3.5em;
+  }
+  p{
+    font-size: medium;
+  }
+  .conten{ 
+    margin: 0em 1em;
+
+  }
+}
+
+  
+
+  
+
 
 
 </style>

@@ -84,4 +84,16 @@
   padding: 0;
   color:  #b0e0fa;
 }
+
+@media (max-width:  1200px) {
+  .conte{
+    margin-top: 7.5em;
+  }
+}
+@media (max-width: 767.98px){
+  .conte{
+    margin-top: 1em;
+  }
+}
+
 </style>

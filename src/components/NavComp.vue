@@ -11,7 +11,7 @@
         <div class="navbar-links">
           <ul class="navbar-nav d-flex flex-row">
             <li class="nav-item">
-              <router-link to="/" class="nav-link">Home</router-link>
+              <router-link to="/" class="nav-link">Inicio</router-link>
             </li>
             <li class="nav-item">
               <router-link to="/html" class="nav-link">HTML</router-link>
@@ -66,7 +66,7 @@
   @media (max-width: 767px) {
    
     .nav-item {
-      margin-right: 1.5rem;
+      margin-right: .8rem ;
       margin-left: 1rem;
     }
     
